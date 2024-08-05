@@ -328,8 +328,115 @@
             <p>Isi form di bawah ini untuk konfirmasi kehadiran.</p>
           </div>
         </div>
+
+        <form
+          class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+          id="my-form"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbw-ioZhvJFlhgxl173x2qpIS8Z0YjU_-xFLN77nRNVviX4pGwn_d08jQmhz5gIPJION/exec"
+        >
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Jumlah Kehadiran</label>
+              <input
+                type="number"
+                class="form-control"
+                id="jumlah"
+                name="jumlah"
+                min="1"
+                max="3"
+                length="1"
+                value="1"
+              />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">status</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih salah satu</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12" style="margin-top: 35px">
+            <button class="btn btn-primary">Kirim</button>
+          </div>
+        </form>
       </div>
     </section>
+
+    <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Kirim Hadiah</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="fw-bold">BCA</div>
+                0640600764 - HABIBURROHMAN
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">BANK JATIM</div>
+                0640600764 - HABIBURROHMAN
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block"
+              >&copy; 2024 Habib & Linda Wedding. All Right Reserved.</small
+            >
+            <small class="block"
+              >Design by:
+              <a href="https://instagram.com/habiburrohman._"
+                >@Habiburrohman._</a
+              ></small
+            >
+            <ul class="mt-3">
+              <li>
+                <a href="https://instagram.com/habiburrohman._"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://facebook.com/habibroc"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/habibur-rohman-5a301216b/"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://x.com/bimbim257"
+                  ><i class="bi bi-twitter-x"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -389,6 +496,23 @@
       if (!localStorage.getItem("opened")) {
         disableScroll();
       }
+    </script>
+
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            alert("Konfirmasi Kehadiran Terkirim!");
+          });
+        });
+      });
     </script>
   </body>
 </html>
