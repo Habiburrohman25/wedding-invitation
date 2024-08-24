@@ -510,15 +510,11 @@
       });
     </script>
 
-    <script>
+   <script>
       const urlParams = new URLSearchParams(window.location.search);
-      const nama = urlParams.get("n") || "";
-      const pronoun = urlParams.get("p") || "Nama Tamu";
-
-      const namaContainer = document.querySelector(".hero h2 span");
-      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
-
-      document.querySelector("#nama").value = nama;
+      const nama = urlParams.get('n');
+      const namaContainer = document.querySelector('.hero h2 span');
+      namaContainer.innerText = nama;
     </script>
   </body>
 </html>
