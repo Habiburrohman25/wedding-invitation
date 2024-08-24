@@ -55,8 +55,8 @@ body {
 .hero h1,
 .hero h2 {
   font-family: "Dancing Script", cursive;
-  font-size: 6rem;
-  color: #666;
+  font-size: 5rem;
+  color: var(--pink);
 }
 
 .hero h4 {
