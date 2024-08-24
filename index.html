@@ -37,8 +37,8 @@
         <h1>Habib & Linda</h1>
         <p class="kami">Kami nantikan kehadiran para keluarga dan sahabat, untuk menghadiri acara resepsi pernikahan kami dalam:</p>
         <div class="simply-countdown text-white"></div>
-        <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
-        <h2><span>ABC</span></h2>
+        <h4>Kepada Bapak/Ibu/Saudara/i, </h4>
+        <h2><span>Nama Tamu</span></h2>
         <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
         <h4 class="maaf">*Mohon maaf apabila ada kesalahan dalam penulisan nama/gelar</h4>
       </main>
@@ -513,7 +513,7 @@
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const nama = urlParams.get("n") || "";
-      const pronoun = urlParams.get("p") || "ABC";
+      const pronoun = urlParams.get("p") || "Nama Tamu";
 
       const namaContainer = document.querySelector(".hero h2 span");
       // namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
