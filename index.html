@@ -31,18 +31,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section
-      id="hero"
-      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
-    >
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center">
       <main>
-        <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
+        <h4>The Wedding of</h4>
         <h1>Habib & Linda</h1>
-        <p>Akan melangsungkan resepsi pernikahan dalam:</p>
-        <div class="simply-countdown"></div>
-        <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()"
-          >Lihat Undangan</a
-        >
+        <p class="kami">Kami nantikan kehadiran para keluarga dan sahabat, untuk menghadiri acara resepsi pernikahan kami dalam:</p>
+        <div class="simply-countdown text-white"></div>
+        <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
+        <h2><span>ABC</span></h2>
+        <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
+        <h4 class="maaf">*Mohon maaf apabila ada kesalahan dalam penulisan nama/gelar</h4>
       </main>
     </section>
 
@@ -52,12 +50,12 @@
           <div class="col-md-8 text-center">
             <h2>Acara Pernikahan</h2>
             <h3>
-              Diselenggarakan pada 14 Oktober 2024 di Sidoarjo, Jawa Timur
+              Diselenggarakan pada 15 September 2024 di Sidoarjo, Jawa Timur.
             </h3>
-            <p>
+            <h3>
               Maka dari itu, dengan segala hormat, kami bermaksud mengundang
               Bapak/Ibu/Saudara/i, untuk hadir pada acara pernikahan kami.
-            </p>
+            </h3>
           </div>
         </div>
         <div class="row couple">
@@ -65,12 +63,12 @@
             <div class="row">
               <div class="col-8 text-end">
                 <h3>Habiburrohman</h3>
-                <p>
+                <!-- <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Alias fuga reprehenderit sunt labore vero laboriosam.
-                </p>
+                </p> -->
                 <p>
-                  Putra dari Bpk. Nurofik <br />
+                  Putra kedua dari Bpk. Nurofik <br />
                   dan <br />
                   Ibu Yahfah
                 </p>
@@ -98,12 +96,12 @@
               </div>
               <div class="col-8">
                 <h3>Sri Linda Oktavia</h3>
-                <p>
+                <!-- <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Alias fuga reprehenderit sunt labore vero laboriosam.
-                </p>
+                </p> -->
                 <p>
-                  Putri dari Alm. Bpk. Joko Winarno <br />
+                  Putri pertama dari Alm. Bpk. Joko Winarno <br />
                   dan <br />
                   Ibu Marsini
                 </p>
@@ -137,7 +135,7 @@
             <a
               href="https://maps.app.goo.gl/cMhtsSxXoZK6rLXs7"
               target="_blank"
-              class="btn btn-light btn-sm my-4"
+              class="btn btn-light btn-md my-4"
               >Peta Lokasi</a
             >
             <p class="description">
@@ -151,41 +149,43 @@
         <div class="row justify-content-center mt-4">
           <div class="col-md-5 col-10">
             <div class="card text-center text-bg-light mb-5">
-              <div class="card-header">Akad Nikah & Resepsi</div>
+              <div class="card-header">Akad Nikah</div>
               <div class="card-body">
                 <div class="row justify-content-center">
                   <div class="col-md-6">
                     <i class="bi bi-clock d-block"></i>
-                    <span>15.00 - 17.00</span>
+                    <span class="jam-akad">15.00 - 17.00</span>
                   </div>
                   <div class="col-md-6">
                     <i class="bi bi-calendar d-block"></i>
-                    <span>Kamis, 12 September 2024</span>
+                    <span class="tgl-akad">Kamis, 12 September 2024</span>
                   </div>
                 </div>
               </div>
               <div class="card-footer">
-                 Dsn. Dukoh, Ds. Tegalagung, Kec. Semanding, Kab. Tuban
+                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
+                dan kehusyuan seluruh prosesi
               </div>
             </div>
           </div>
           <div class="col-md-5 col-10">
             <div class="card text-center text-bg-light">
-              <div class="card-header">Ngunduh Mantu</div>
+              <div class="card-header">Resepsi</div>
               <div class="card-body">
                 <div class="row justify-content-center">
                   <div class="col-md-6">
                     <i class="bi bi-clock d-block"></i>
-                    <span>18.00 - 21.00</span>
+                    <span class="jam-resepsi">18.00 - 20.00</span>
                   </div>
                   <div class="col-md-6">
                     <i class="bi bi-calendar d-block"></i>
-                    <span>Senin, 14 Oktober 2024</span>
+                    <span class="tgl-resepsi">Senin, 14 Oktober 2024</span>
                   </div>
                 </div>
               </div>
               <div class="card-footer">
-                 Perumahan Surya Residence Cluster Vania Blok 4A No.61, Suko, Damarsi, Kec. Buduran, Kab. Sidoarjo
+                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
+                dan kehusyuan seluruh prosesi
               </div>
             </div>
           </div>
@@ -193,7 +193,7 @@
       </div>
     </section>
 
-    <section id="gallery" class="gallery">
+    <!-- <section id="gallery" class="gallery">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
@@ -284,7 +284,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section id="rsvp" class="rsvp">
       <div class="container">
@@ -429,9 +429,9 @@
     <script>
       simplyCountdown(".simply-countdown", {
         year: 2024, // required
-        month: 10, // required
-        day: 14, // required
-        hours: 18, // Default is 0 [0-23] integer
+        month: 9, // required
+        day: 15, // required
+        hours: 19, // Default is 0 [0-23] integer
         words: {
           //words displayed into the countdown
           days: { singular: "hari", plural: "hari" },
@@ -513,10 +513,10 @@
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const nama = urlParams.get("n") || "";
-      const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i";
+      const pronoun = urlParams.get("p") || "ABC";
 
-      const namaContainer = document.querySelector(".hero h4 span");
-      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
+      const namaContainer = document.querySelector(".hero h2 span");
+      // namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
 
       document.querySelector("#nama").value = nama;
     </script>
